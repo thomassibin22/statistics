@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Positions|Statistical Science</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+  <link rel="shortcut icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Temple_T_logo.svg/905px-Temple_T_logo.svg.png">   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/darkly/bootstrap.min.css">
+  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <link rel="stylesheet" href="https://www.fox.temple.edu/cms/wp-content/themes/fox/assets/css/jquery.fancybox.css" type="text/css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+
+body{
+    background-color:white !important;
+    color:#222 !important;
+    font-family: 'Questrial', sans-serif;
+}
+/*                      header                                 */
+@media (max-width: 991px) {
+  .Hero {
+    background:url(https://www.fox.temple.edu/cms/wp-content/uploads/2018/09/Website-header-v5-01_animated.svg);
+    background-color:white;
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding-bottom:100px;
+    height:auto;
+  }
+}
+
+@media all and (min-width: 991px) {
+  .Hero {
+    background:url(https://www.fox.temple.edu/cms/wp-content/uploads/2018/09/Website-header-v5-01_animated.svg);
+    background-color:white;
+    background-repeat:no-repeat ;
+    background-size:cover ;
+    padding-bottom:100px ;
+    height:200px;
+  }
+}
+
+  #heading {
+  color:black;
+  }
+  
+@media all and (max-width: 767px) {
+  #heading {
+    font-size:60px ;
+    font-family:'Open Sans' ;
+    line-height:70px ;
+    margin-bottom:-10px ;
+  }
+}
+
+@media (min-width:767px) and (max-width: 991px) {
+  #heading {
+    font-size:60px ;
+    font-family:'Open Sans' ;
+    margin-bottom:-60px ;
+  }
+}
+
+@media (min-width: 991px) {
+  #heading {
+    font-size:79px ;
+    font-family:'Open Sans' ;
+    margin-bottom:-30px ;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  #heading {
+    font-size:89px ;
+    font-family:'Open Sans' ;
+    margin-bottom:-70px ;
+
+  }
+}
+
+/*                      navbar                                 */
+.categories {
+  text-align:center !important;
+  margin-bottom:0px !important;
+  padding:10px;
+  padding-bottom:0px;
+  background-color:#a41e35;
+}
+
+.categories li {
+  display:inline-block !important;
+  float:none;
+}
+
+.customLink {
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+  transition:0.5s;
+}
+
+.customLink:hover, .customLink:focus {
+  background-color:#c30929;
+  text-decoration:none;
+}
+
+.dropdown-item{
+    color:white;
+    transition:1s;
+}
+
+.dropdown-item:hover{
+    text-decoration:none;
+    color:white;
+}
+
+.dropdown-menu{
+    text-align:Left;
+    -webkit-transition: height 0.65s ease;
+    transition: height 0.65s ease;
+    margin-top:0px;
+}
+
+.dropdown-item-link{
+    padding:4px 0px 4px 15px;
+    margin: 0 !important;
+    transition:0.5s;
+}
+
+.dropdown-item-link:hover{
+    color:#222;
+    background-color:white;
+}
+
+@media screen and (max-width: 600px) {
+  .categories a:not(:first-child) {display: none;}
+  .categories a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .categories.responsive {position: relative;}
+  .categories.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .categories.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+</style>
+	
+
+<style>
+
+
+  div.content2 {
+  flex-direction: row;
+  margin-left: 0px;
+  margin-top: 100px;
+  }
+
+  .container3{
+    margin-top: 500px;
+  }
+
+  .BodyContainer{
+  width:400px; 
+  margin:0 auto;  
+  font-size: 20px;
+}
+
+	
+.BodyContainer{
+  width:1500px; 
+  margin:0 auto;  
+  font-size: 20px;
+}
+
+
+</style>	
+<style>
+    body
+    {
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Poppins' , sans-serif;
+    }
+    
+    nav
+    {
+        width: 100%;
+        background: brown;
+    }
+    
+    nav ul
+    {
+        display: flex;
+        justify-content:center;
+        font-size: 22px;
+        max-width: auto;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    nav ul li
+    {
+        list-style: none;
+        position: relative;
+        padding: 10px 20px;
+        transition: 0.5s;
+        box-sizing: border-box;
+        border-right: 1px solid rgba(255,255,255,.2);
+    }
+    nav ul li:hover
+    {
+        background-color: brown;
+    }
+    
+    nav ul li:last-child
+    {
+        border-right: none;
+    }
+    
+    nav ul li a
+    {
+        text-decoration:none;
+        padding: 0 20px;
+        color: #fff;
+    }
+    
+    nav ul li ul
+    {
+        position: absolute;
+        top: 49px;
+        Left: 0;
+        background-color: brown;
+        display:block;
+        width: 450px;
+        transition: 0.5s;
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    nav ul li:hover ul
+    {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    nav ul li ul li
+    {
+        border-right: none;
+        border-bottom: 1px solid rgba(255,255,255,.2) ;
+    }
+    .toggle
+    {
+        width: 100%;
+        padding: 0px 25px;
+        background: brown ;
+        text-align: right;
+        box-sizing: border-box;
+        font-size: 30px;
+        font-weight:bold;
+        color: #fff;
+        display: none;
+    }
+    
+    @media (max-width: 768px)
+    {
+        nav ul
+        {
+            display: none;
+        }
+    
+        nav ul li
+        {
+            display: block;
+            border-bottom: 1px solid rgba(255,255,255,.2);
+    
+        }
+    
+        nav ul li ul 
+        {
+            width: 100%;
+            z-index: 1;
+        }
+    
+        .toggle
+        {
+            display: block;
+        }
+    
+        .active
+        {
+            display: block;
+        }
+    
+    }
+    
+    
+.navigation{
+  text-align: Left;
+  background-color:#ededed;
+  height: 30px;
+  
+  
+}
+
+.navigation a{
+  color: #8f0404;
+}
+    
+    
+    
+    </style>
+<style>
+
+    a[href*="twitter.com/"] {
+    background:url(https://twitter.com/favicon.ico) no-repeat left center;
+    padding-left:19px;
+    }
+    
+    .card {
+      box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
+      transition: 0.3s;
+      width: 100%;
+      padding: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .card3 {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      width: 100%;
+    }
+    
+    .card:hover{
+      box-shadow: 0 20px 26px 0 rgba(0,0,0,0.2);
+    }
+    
+    .card3.hover {
+      box-shadow: 0 20px 26px 0 rgba(0,0,0,0.2);
+    }
+    
+    .container2 {
+       padding: 12px 16px;
+       margin: 10px;
+    }
+    
+    .container3 {
+      padding: 16px;
+       margin: 40px;
+    }
+    
+    .container4 {
+       padding: 16px;
+       margin: 20px;
+    }
+    
+    .container5 {
+       padding: 16px;
+       margin: 20px;
+    }
+    
+    .container6 {
+       padding: 16px;
+       margin: 20px;
+    }
+    
+    .container7 {
+       padding: 16px;
+       margin: 20px;
+    }
+    
+    .container8 {
+       padding: 16px;
+       margin: 20px;
+    }
+    
+    hr {
+      display: block;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+      margin-left: auto;
+      margin-right: auto;
+      border-style: inset;
+      border-width: 1px;
+    }
+    
+    .content {
+      padding: 16px;
+    }
+    
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+    
+    .sticky + .content {
+      padding-top: 60px;
+    }
+    
+    
+    
+    </style>
+    <style>
+
+        .middle{
+        position: relative;
+        text-align: center;
+        transform: translate(0%,0%);
+             
+        
+        }
+        .butn{
+        position: relative;
+        display: block;
+        color: brown;
+        
+        font-family: "montserrat";
+        text-decoration: none;
+      
+        border: 4px solid brown;
+        
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: 1s all ease;
+        padding: 10px;
+        }
+        .butn::before{
+        background: brown;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: -1;
+        transition: all 0.6s ease;
+        }
+        
+        .btn4::before{
+        width: 150%;
+        height: 0%;
+        transform: translate(-50%,-50%) rotate(-45deg);
+        
+        }
+        .btn4:hover::before{
+        height: 380%;
+        }
+        
+        </style>
+        <style>
+            .card2 {
+              box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+              transition: 0.3s;
+              width: 100%;
+            }
+            
+            .card2:hover {
+              box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            }
+            
+            .container {
+              padding: 3px 5px;
+            }
+            </style>
+<body>
+    <style>
+        time.icon
+      {
+        font-size: 1em; /* change icon size */
+        display: block;
+        position: relative;
+        width: 7em;
+        height: 7em;
+        background-color: #fff;
+        border-radius: 0.6em;
+        box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
+        overflow: hidden;
+        
+      }
+      
+      time.icon *
+      {
+        display: block;
+        width: 100%;
+        font-size: 1em;
+        font-weight: bold;
+        font-style: normal;
+        text-align: center;
+      }
+      
+      time.icon strong
+      {
+        position: absolute;
+        top: 0;
+        padding: 0.4em 0;
+        color: #fff;
+        background-color: #fd9f1b;
+        border-bottom: 1px dashed #f37302;
+        box-shadow: 0 2px 0 #fd9f1b;
+      }
+      
+      time.icon em
+      {
+        position: absolute;
+        bottom: 0.3em;
+        color: #fd9f1b;
+      }
+      
+      time.icon span
+      {
+        font-size: 2.8em;
+        letter-spacing: -0.05em;
+        padding-top: 0.8em;
+        color: #2f2f2f;
+      }
+      hr { 
+        display: block;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: 1px;
+      } 
+      
+      .card {
+        box-shadow: 4px 8px 8px 4px rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 100%;
+        height: auto;
+      }
+      .card:hover{
+        box-shadow: 0 20px 26px 0 rgba(0,0,0,0.2);
+      }
+      </style>
+          <style>
+
+            .middle{
+            position: relative;
+            text-align: center;
+            transform: translate(0%,0%);
+                 
+            
+            }
+            .butn{
+            position: relative;
+            display: block;
+            color: brown;
+            width: 100%;
+            
+            font-family: "montserrat";
+            text-decoration: none;
+          
+            border: 4px solid brown;
+            
+            text-transform: uppercase;
+            overflow: hidden;
+            transition: 1s all ease;
+            padding: 10px;
+            }
+            .butn::before{
+            background: brown;
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: -1;
+            transition: all 0.6s ease;
+            }
+            
+            .butn2{
+            position: relative;
+            display: block;
+            color: brown;
+            width: 350px;
+            height: 300px;
+            
+            font-family: "montserrat";
+            text-decoration: none;
+            font-size: 25px;
+          
+            border: 4px solid brown;
+            
+            text-transform: uppercase;
+            overflow: hidden;
+            transition: 1s all ease;
+            padding-top: 100px;
+            }
+            .butn2::before{
+            background: brown;
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: -1;
+            transition: all 0.6s ease;
+            }
+            
+
+            .btn4::before{
+            width: 150%;
+            height: 0%;
+            transform: translate(-50%,-50%) rotate(-45deg);
+            
+            }
+            .btn4:hover::before{
+            height: 380%;
+            }
+
+            .btn3::before{
+            width: 150%;
+            height: 0%;
+            transform: translate(-50%,-50%) rotate(-45deg);
+            
+            }
+            .btn3:hover::before{
+            height: 380%;
+            }
+            
+            </style>
+            <style>
+              .imageCircle{
+
+              border-radius: 50%;
+              height: 150px;
+
+              }
+            </style>
+            <style>
+              time.icon
+            {
+              font-size: 1em; /* change icon size */
+              display: block;
+              position: relative;
+              width: 4em;
+              height: 4em;
+              background-color: #fff;
+              border-radius: 0.6em;
+              box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
+              overflow: hidden;
+            }
+            
+            time.icon *
+            {
+              display: block;
+              width: 100%;
+              font-size: 0.7em;
+              font-weight: bold;
+              font-style: normal;
+              text-align: center;
+            }
+            
+            time.icon strong
+            {
+              position: absolute;
+              top: 0;
+              padding: 0em 0;
+              color: #fff;
+              background-color: #fd9f1b;
+              border-bottom: 1px dashed #f37302;
+              box-shadow: 0 2px 0 #fd9f1b;
+            }
+            
+            time.icon em
+            {
+              position: absolute;
+              bottom: 0em;
+              color: #fd9f1b;
+            }
+            
+            time.icon span
+            {
+              font-size: 1.5em;
+              letter-spacing: -0.05em;
+              padding-top: 0.8em;
+              color: #2f2f2f;
+            }
+            hr { 
+              display: block;
+              margin-top: 0em;
+              margin-bottom: 0em;
+              margin-left: auto;
+              margin-right: auto;
+              border-style: inset;
+              border-width: 1px;
+            } 
+            
+            .card {
+              box-shadow: 4px 8px 8px 4px rgba(0,0,0,0.2);
+              transition: 0.3s;
+              width: 100%;
+              height: max-content;
+            }
+            .card:hover{
+              box-shadow: 0 20px 26px 0 rgba(0,0,0,0.2);
+            }
+            </style>
+
+            <style>
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-image: url("http://www.statisticsattemplefox.info/wp-content/uploads/2020/01/Donald-Rubin-HS.jpg");
+  background-size: 100%;
+  width: 300px;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+<style>
+     .modal2 {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(1.1);
+        transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    }
+    .modal-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 1rem 1.5rem;
+        width: 24rem;
+        border-radius: 0.5rem;
+    }
+    .close-button {
+        float: right;
+        width: 1.5rem;
+        line-height: 1.5rem;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        background-color: lightgray;
+    }
+    .close-button:hover {
+        background-color: darkgray;
+    }
+    .show-modal {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1.0);
+        transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    }
+
+    .HiddCard1{
+        visibility: visible;
+    }
+
+    .HiddCard2{
+        visibility: visible;
+    }
+</style>
+<!-------------------------------------------------------------Head------------------------------------------------------------------->
+    <section >
+    
+        <div class="Hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center" id="heading" style="font-family:'Open Sans', sans-serif;margin-top:20px;text-transform: uppercase;"><strong>News & Events</strong><br></p>
+                    </div>
+                </div>
+        </div>
+        </div>
+    </section>
+<!--------------------------------------------------------------Navigation-------------------------------------------------------------------->
+
+<nav>
+  <div  class    = "toggle">
+      <div class = 'menu'>
+          &#9776; 
+      </div>
+  </div>
+  <ul>
+    <li><a href='https://www.statisticsattemplefox.info/'>Home</a>
+      <li style="color: white;">Academics</a>
+      <ul>
+        <li><a href="https://www.statisticsattemplefox.info/Undergraduate">Undergraduate</a></li>
+        <li><a href="https://www.statisticsattemplefox.info/Graduate">Graduate</a></li>
+        <li><a href="https://www.statisticsattemplefox.info/Doctoral">Doctoral</a></li>
+    </ul>
+  </li>     
+      <li style="color: white;">Research
+      <ul>
+        <li><a href="https://www.statisticsattemplefox.info/researcher-areas">Research Areas</a></li>
+        <li><a href="https://www.statisticsattemplefox.info/grants">Grants</a></li>
+        <li><a href="https://www.statisticsattemplefox.info/center-for-hdm">Center for High-Dimension Math</a></li>
+        <li><a href="https://www.statisticsattemplefox.info/data-science-center">Data Science Center</a></li>
+        
+    </ul>
+  </li>
+      <li style="color: white;">People
+          <ul>
+              <li><a href="https://www.statisticsattemplefox.info/people">Faculty</a></li>
+              <li><a href="https://www.statisticsattemplefox.info/people">Researchers</a></li>
+              <li><a href="https://www.statisticsattemplefox.info/people">Students and Staff</a></li>
+          </ul>
+      </li>
+      <li style="color: white;">Resources
+      <ul>
+        <li><a href="https://www.statisticsattemplefox.info/news-events">News and Events</a></li>
+        <li><a href="https://www.statisticsattemplefox.info/consulting-center">Center for Statistical Analysis</a></li>
+        <li><a href="https://www.statisticsattemplefox.info/student-association">Student Associations</a></li>
+      </ul>
+    </li>
+      <li style="color: white;">About Us
+      <ul>
+        <li><a href="https://www.statisticsattemplefox.info/history">History</a></li>
+        <li><a href="https://www.statisticsattemplefox.info/open-position">Open Position</a></li>
+        <li><a href="https://www.statisticsattemplefox.info/contact-us">Contact Us</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>  
+
+  <!-------------------------------------------------------------------------------------------------------->
+<div class="navigation"> 
+  <div class="container">
+  <p style="padding:5px"><a href="https://www.statisticsattemplefox.info/">Home</a>&nbsp;&nbsp; > &nbsp;&nbsp; <a href="" >Resources</a> &nbsp;&nbsp; > &nbsp;&nbsp;<a href="https://www.statisticsattemplefox.info/news-events" >News & Events</a>&nbsp;&nbsp; > &nbsp;&nbsp;<a href="" >news</a></p>
+</div>
+</div> 
+<!---------------------------------------------------------------------------------------------------------->  
+<div class="container">
+<div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <B><p style="font-size: 30px;color: brown;text-align:center;">News<br></p></B>
+                <hr>
+                <br>
+        <div class="fakeimg" style="height:300px;text-align:center;"></div>      
+        
+            
+            <div id="HiddCard1" class="HiddCard1">
+                <br>
+               
+                <br>
+                Dr. Donald Rubin receieved Fox School of Business Award for High Achievement in Sponsored Projects. 
+                <br>
+                <br>
+         </div>
+      </div>
+         
+    
+    </div>
+
+
+    <div class="rightcolumn">
+      <div class="card">
+        <h3 style="text-align: center;">Resources</h3>
+        <div class="middle">
+            <div class="row" style="margin: 20px;">
+                
+                <a href="https://www.temple.edu/academics/degree-programs/statistical-science-and-data-analytics-major-bu-ssda-bs" class="butn btn4">News & Events</a>
+                <br>
+                <a href="http://admissions.temple.edu/apply" class="butn btn4">Center for Statistical Analysis</a>
+                <br>
+                <a href="http://admissions.temple.edu/apply" class="butn btn4">Student Associations</a>
+                                   
+            
+            </div>
+        </div>
+      </div>
+     
+      
+      
+    </div>
+  </div>
+</div>
+	
+
+    <script>
+  function myFunction(e) {
+      e.preventDefault();
+  var element = document.getElementById("HiddCard1");
+
+  if (element.classList) { 
+    element.classList.toggle("HiddCard2");
+  } else {
+    var classes = element.className.split(" ");
+    var i = classes.indexOf("HiddCard2");
+
+    if (i >= 0) 
+      classes.splice(i, 1);
+    else 
+      classes.push("HiddCard2");
+      element.className = classes.join(" "); 
+  }
+}
+    </script>
+	
+</body>
+
+</html> 

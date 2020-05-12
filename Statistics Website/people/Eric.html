@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Leaders 9-5</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+	
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/darkly/bootstrap.min.css">
+  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <link rel="stylesheet" href="https://www.fox.temple.edu/cms/wp-content/themes/fox/assets/css/jquery.fancybox.css" type="text/css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+
+body{
+    background-color:white !important;
+    color:#222 !important;
+    font-family: 'Questrial', sans-serif;
+}
+/*                      header                                 */
+@media (max-width: 991px) {
+  .Hero {
+    background:url(https://www.fox.temple.edu/cms/wp-content/uploads/2018/09/Website-header-v5-01_animated.svg);
+    background-color:white;
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding-bottom:100px;
+    height:auto;
+  }
+}
+
+@media all and (min-width: 991px) {
+  .Hero {
+    background:url(https://www.fox.temple.edu/cms/wp-content/uploads/2018/09/Website-header-v5-01_animated.svg);
+    background-color:white;
+    background-repeat:no-repeat ;
+    background-size:cover ;
+    padding-bottom:100px ;
+    height:200px;
+  }
+}
+
+  #heading {
+  color:black;
+  }
+  
+@media all and (max-width: 767px) {
+  #heading {
+    font-size:60px ;
+    font-family:'Open Sans' ;
+    line-height:70px ;
+    margin-bottom:-10px ;
+  }
+}
+
+@media (min-width:767px) and (max-width: 991px) {
+  #heading {
+    font-size:60px ;
+    font-family:'Open Sans' ;
+    margin-bottom:-60px ;
+  }
+}
+
+@media (min-width: 991px) {
+  #heading {
+    font-size:79px ;
+    font-family:'Open Sans' ;
+    margin-bottom:-30px ;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  #heading {
+    font-size:89px ;
+    font-family:'Open Sans' ;
+    margin-bottom:-70px ;
+
+  }
+}
+
+/*                      navbar                                 */
+.categories {
+  text-align:center !important;
+  margin-bottom:0px !important;
+  padding:10px;
+  padding-bottom:0px;
+  background-color:#a41e35;
+}
+
+.categories li {
+  display:inline-block !important;
+  float:none;
+}
+
+.customLink {
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+  transition:0.5s;
+}
+
+.customLink:hover, .customLink:focus {
+  background-color:#c30929;
+  text-decoration:none;
+}
+
+.dropdown-item{
+    color:white;
+    transition:1s;
+}
+
+.dropdown-item:hover{
+    text-decoration:none;
+    color:white;
+}
+
+.dropdown-menu{
+    text-align:Left;
+    -webkit-transition: height 0.65s ease;
+    transition: height 0.65s ease;
+    margin-top:0px;
+}
+
+.dropdown-item-link{
+    padding:4px 0px 4px 15px;
+    margin: 0 !important;
+    transition:0.5s;
+}
+
+.dropdown-item-link:hover{
+    color:#222;
+    background-color:white;
+}
+
+@media screen and (max-width: 600px) {
+  .categories a:not(:first-child) {display: none;}
+  .categories a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .categories.responsive {position: relative;}
+  .categories.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .categories.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+</style>
+	
+
+<style>
+
+
+	.sidebar2 {
+		width: 350px;
+		height: auto;
+		overflow: auto;
+    float:  left ;
+    margin: 10px -10px;
+		
+	}
+.sidebar2 a {
+  display: block;
+  color: black;
+  padding: 0px;
+  text-decoration: none;
+}
+ 
+.sidebar2 a.active {
+  background-color: #a41e35;
+  color: white;
+}
+
+.sidebar2 a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content2 {
+  margin-left: 350px;
+
+  
+}
+.HiddenContainer{
+  visibility: hidden;
+  position: absolute;
+  width: 200px;
+}
+
+
+@media screen and (max-width: 700px) {
+  .sidebar2 {
+    height: 600px;
+    position:absolute;
+    margin-left: 100px;
+    visibility: hidden;
+  }
+  
+  .sidebar2 a {float: left;}
+  div.content {margin-left: 0;}
+  
+  div.content2 {
+  flex-direction: row;
+  margin-left: 20px;
+  margin-top: 0px;
+  width:  450px
+  }
+ 
+ 
+  .HiddenContainer{
+    visibility:visible;
+    width: 350Px;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 35px;
+      }
+
+    .HiddenContainer img {
+      width: 150px;
+    }
+  
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar2 {
+    visibility: hidden;
+  }
+  div.content2 {
+  flex-direction: row;
+  margin-left: 0px;
+  margin-top: 100px;
+  }
+
+  .container3{
+    margin-top: 500px;
+  }
+
+  .BodyContainer{
+  width:400px; 
+  margin:0 auto;  
+  font-size: 20px;
+}
+.HiddenContainer{visibility:visible; }
+
+}	
+	
+.BodyContainer{
+  width:1500px; 
+  margin:0 auto;  
+  font-size: 20px;
+}
+
+</style>	
+<style>
+
+a[href*="twitter.com/"] {
+background:url(https://twitter.com/favicon.ico) no-repeat left center;
+padding-left:19px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+}
+
+.card3 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+}
+
+.card:hover{
+  box-shadow: 0 20px 26px 0 rgba(0,0,0,0.2);
+}
+
+.card3.hover {
+  box-shadow: 0 20px 26px 0 rgba(0,0,0,0.2);
+}
+
+.container2 {
+   padding: 12px 16px;
+   margin: 10px;
+}
+
+.container3 {
+  padding: 16px;
+   margin: 40px;
+}
+
+.container4 {
+   padding: 16px;
+   margin: 20px;
+}
+
+.container5 {
+   padding: 16px;
+   margin: 20px;
+}
+
+.container6 {
+   padding: 16px;
+   margin: 20px;
+}
+
+.container7 {
+   padding: 16px;
+   margin: 20px;
+}
+
+.container8 {
+   padding: 16px;
+   margin: 20px;
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+
+</style>
+<style>
+  body
+  {
+      margin: 0px;
+      padding: 0px;
+      font-family: 'Poppins' , sans-serif;
+  }
+  
+  nav
+  {
+      width: 100%;
+      background: brown;
+  }
+  
+  nav ul
+  {
+      display: flex;
+      justify-content:center;
+      font-size: 22px;
+      max-width: auto;
+      margin: 0 auto;
+      padding: 0;
+  }
+  
+  nav ul li
+  {
+      list-style: none;
+      position: relative;
+      padding: 10px 20px;
+      transition: 0.5s;
+      box-sizing: border-box;
+      border-right: 1px solid rgba(255,255,255,.2);
+  }
+  nav ul li:hover
+  {
+      background-color: brown;
+  }
+  
+  nav ul li:last-child
+  {
+      border-right: none;
+  }
+  
+  nav ul li a
+  {
+      text-decoration:none;
+      padding: 0 20px;
+      color: #fff;
+  }
+  
+  nav ul li ul
+  {
+      position: absolute;
+      top: 49px;
+      Left: 0;
+      background-color: brown;
+      display:block;
+      width: 450px;
+      transition: 0.5s;
+      opacity: 0;
+      visibility: hidden;
+  }
+  
+  nav ul li:hover ul
+  {
+      opacity: 1;
+      visibility: visible;
+  }
+  
+  nav ul li ul li
+  {
+      border-right: none;
+      border-bottom: 1px solid rgba(255,255,255,.2) ;
+  }
+  .toggle
+  {
+      width: 100%;
+      padding: 0px 25px;
+      background: brown ;
+      text-align: right;
+      box-sizing: border-box;
+      font-size: 30px;
+      font-weight:bold;
+      color: #fff;
+      display: none;
+  }
+  
+  @media (max-width: 768px)
+  {
+      nav ul
+      {
+          display: none;
+      }
+  
+      nav ul li
+      {
+          display: block;
+          border-bottom: 1px solid rgba(255,255,255,.2);
+  
+      }
+  
+      nav ul li ul 
+      {
+          width: 100%;
+          z-index: 1;
+      }
+  
+      .toggle
+      {
+          display: block;
+      }
+  
+      .active
+      {
+          display: block;
+      }
+  
+  }
+  
+  
+.navigation{
+text-align: left;
+background-color:#ededed;
+height: 30px;
+
+
+}
+
+.navigation a{
+color: #8f0404;
+}
+  
+  
+  
+  </style>
+<body>
+<!-------------------------------------------------------------Head------------------------------------------------------------------->
+    <section >
+    
+        <div class="Hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center" id="heading" style="font-family:'Open Sans', sans-serif;margin-top:20px;text-transform: uppercase;"><strong>People</strong><br></p>
+                    </div>
+                </div>
+        </div>
+        </div>
+    </section>
+<!---------------------------------------------------------------Navbar----------------------------------------------------------------->
+<nav>
+  <div  class    = "toggle">
+      <div class = 'menu'>
+          &#9776; 
+      </div>
+  </div>
+  <ul>
+    <li><a href='https://www.statisticsattemplefox.info/'>Home</a>
+      <li style="color: white;">Academics</a>
+      <ul>
+        <li><a href="https://www.statisticsattemplefox.info/Undergraduate">Undergraduate</a></li>
+        <li><a href="https://www.statisticsattemplefox.info/Graduate">Graduate</a></li>
+        <li><a href="https://www.statisticsattemplefox.info/Doctoral">Doctoral</a></li>
+    </ul>
+  </li>     
+      <li style="color: white;">Research
+      <ul>
+        <li><a href="https://www.statisticsattemplefox.info/researcher-areas">Research Areas</a></li>
+        <li><a href="https://www.statisticsattemplefox.info/grants">Grants</a></li>
+        <li><a href="https://www.statisticsattemplefox.info/center-for-hdm">Center for High-Dimension Math</a></li>
+        <li><a href="https://www.statisticsattemplefox.info/data-science-center">Data Science Center</a></li>
+        
+    </ul>
+  </li>
+      <li style="color: white;">People
+          <ul>
+              <li><a href="https://www.statisticsattemplefox.info/people">Faculty</a></li>
+              <li><a href="https://www.statisticsattemplefox.info/people">Researchers</a></li>
+              <li><a href="https://www.statisticsattemplefox.info/people">Students and Staff</a></li>
+          </ul>
+      </li>
+      <li style="color: white;">Resources
+      <ul>
+        <li><a href="https://www.statisticsattemplefox.info/news-events">News and Events</a></li>
+        <li><a href="https://www.statisticsattemplefox.info/consulting-center">Center for Statistical Analysis</a></li>
+        <li><a href="https://www.statisticsattemplefox.info/student-association">Student Associations</a></li>
+      </ul>
+    </li>
+      <li style="color: white;">About Us
+      <ul>
+        <li><a href="https://www.statisticsattemplefox.info/history">History</a></li>
+        <li><a href="https://www.statisticsattemplefox.info/open-position">Open Position</a></li>
+        <li><a href="https://www.statisticsattemplefox.info/contact-us">Contact Us</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>  
+  
+  <!-------------------------------------------------------------------------------------------------------->
+  <div class="navigation"> 
+    <div class="container">
+    <p style="padding:5px"><a href="https://www.statisticsattemplefox.info/">Home</a> &nbsp; &nbsp; > &nbsp; &nbsp;<a href="https://www.statisticsattemplefox.info/people/" >People</a> &nbsp; &nbsp; > &nbsp; &nbsp;<a href="" >Eric Eisenstein</a>
+    </div>
+  </div>
+
+<div class="BodyContainer" >
+  <div class="container">
+  <div class="sidebar2">
+    <div class="card">
+        <img src="http://www.statisticsattemplefox.info/wp-content/uploads/2020/01/Eric-Eisenstein-e1578533576769.jpg" alt="Avatar" style="width:100%">
+        
+      </div>
+      <div class="card">
+        
+        <div class="container2">
+          <B>Office:</B>Alter Hall 527<br>
+          <b>Phone:	</b>	215.204.7039<br>
+          <b>Email:	</b>	eric.eisenstein@temple.edu<br>
+          <a style="color: brown;"href="https://eric-eisenstein.com/resume.pdf"><i class="fa fa-file"> &nbsp; &nbsp; </i><u>Curriculum Vitae</u></a>
+          <a style="color: brown;" href="https://eric-eisenstein.com/index.htm"><i class="fa fa-chrome">&nbsp; &nbsp;</i><u>Website</u></a>
+           
+        </div>
+      </div>
+</div>
+      <div class="content2">
+        <div class="HiddenContainer">
+          <div class="card">
+              <img src="http://www.statisticsattemplefox.info/wp-content/uploads/2020/01/Eric-Eisenstein-e1578533576769.jpg" alt="Avatar" style="width:100%">
+              
+            </div>
+            <div class="card">
+              
+              <div class="container2">
+                <B>Office:</B>Alter Hall 527<br>
+                <b>Phone:	</b>	215.204.7039<br>
+                <b>Email:	</b>	eric.eisenstein@temple.edu<br>
+                <a style="color: brown;"href="https://eric-eisenstein.com/resume.pdf"><i class="fa fa-file"> &nbsp;&nbsp; </i><u>Curriculum Vitae</u></a>
+                <a style="color: brown;" href="https://eric-eisenstein.com/index.htm"><i class="fa fa-chrome">&nbsp;&nbsp;</i><u>Website</u></a>
+                 
+              </div>
+            </div>
+      </div>
+          <div class="card">
+              <div class="container3">
+
+                
+                <h2 style="text-align:left"><b>ERIC EISENSTEIN</b></h2> 
+                <hr>
+                <p><B>Associate Professor</B></p>
+                <p><B>Director, MS Business Analytics, Department of Statistical Science</B></p>
+                <p><B>Director, Graduate Programs, Department of Marketing and Supply Chain Management</B></p>
+                <p><B>Chair, Undergraduate Curriculum Committee</B></p>
+                <p>Statistical Science</p>
+                 <br>
+                 <p style="text-align: justify;">
+                  Dr. Eisenstein’s research primarily explores how people make decisions that materially affect their lives. These decisions may be financial, such as the purchase of an expensive durable good, or policy oriented, such as interpreting statistical evidence, choosing between alternative proposals, or combating identity theft.
+                  <br><br>
+                  Prior to becoming an academic, Dr. Eisenstein worked at Mercer Management Consulting (now Oliver Wyman) where he focused on management of technology and consumer research in the financial services and telecommunications industries. He is active in the community, having founded or led several organizations, and he serves on the board of the Visiting Nurses Association of Philadelphia.
+                  <br><br>
+                  Dr. Eisenstein earned his Ph.D. in Applied Economics and an M.A. in Statistics at the Wharton School of Business at the University of Pennsylvania. He also completed his undergraduate education at Penn in the Management and Technology program, wherein he concurrently earned B.S. degrees from Wharton and the School of Engineering.
+                  <br><br>
+                 
+
+              </p>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="container4">
+                <h4><b>Research Areas</b></h4> 
+                <p>
+                  <ul style="list-style-type:disc;">
+                    <li>Managerial and consumer decision-making in high-motivation environments.</li>
+                    <li>Decision-support systems, decision aids, and debiasing methods.</li>
+                    <li>Learning and the development of expertise in managerial and consumer environments.</li>
+                    
+                  </p> 
+              </div>
+            </div>
+  
+           <div class="card">
+              <div class="container6">
+                <h4><b>Eduction</b></h4> 
+                <ul style="list-style-type:disc;">
+                  <li><B>Ph.D. Managerial Science and Applied Economics (Marketing), </B>The Wharton School, University of Pennsylvania</li>
+                    <li><b>M.A. Statistics, </B>The Wharton School, University of Pennsylvania </li>
+                      <li><B>B.S. Economics, </B>The Wharton School, University of Pennsylvania</li>
+                    <li><b>B.S. Engineering, Computer Systems, </B>School of Engineering and Applied Science, University of Pennsylvania </li>
+                  </ul>
+              </div>
+            </div>
+  
+            <div class="card">
+              <div class="container7">
+                <h4><b>Experience</b></h4> 
+                <p>
+
+                  <ul style="list-style-type:disc;">
+                    <h5><u><b>Academic</b></u></h5>
+                    
+                    <li><b>2008 – Present </b>Fox School of Business, Temple University, departments of Statistical Science and Marketing </li>
+                      <li><b>Assistant Professor 2002 – 2008 </b>Johnson School of Management, Cornell University</li>
+                  </ul></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="container8">
+                <h4><b>Book Chapters</b></h4> 
+                <p>
+                  <br>
+                 <b>Eisenstein, Eric M. and Leonard M. Lodish (2002)</b>  "Precisely Worthwhile or Vaguely Worthless: Are Marketing Decision Support and Intelligent Systems 'Worth It'?," Handbook of Marketing, Barton Weitz and Robin Wensley (eds.), Sage Publications, London.
+                 <br><br>
+                 <b>(Hutchinson, J. Wesley, and Eric M. Eisenstein (2008)</b> "Consumer Learning and Expertise," The Handbook of Consumer Psychology, Haugtvedt, Herr, and Kardes (eds.).
+                </p>
+              </div>
+           </div>
+    
+
+            <div class="card">
+              <div class="container8">
+                <h4><b>Sample Publications</b></h4> 
+                <p>
+                          
+            Wilcox, Kieth, Lauren Block and Eric M. Eisenstein (2011)<b>“Leave Home Without It? The Effects of Credit Card Debt and Available Credit on Spending”,</b> Journal of Marketing Research, 48, pp. 60-78.
+            <br><br>
+            Hutchinson, J. Wesley, Joseph W. Alba, and Eric M. Eisenstein (2010) <b>“Managerial Inferences: The Effects of Graphical Formats on Data-Based Decision Making,” </b>Journal of Marketing Research, 47, 4, pp. 627-642.
+            <br><br>
+            Eisenstein, Eric M. (2010) <b>“Consumer Expertise,”</b> Wiley International Encyclopedia of Marketing, John Wiley and Sons, Chichester, West Sussex, England, ISBN 978-1-405-16178-7.
+            <br><br>
+            Eisenstein, Eric M. and J. Wesley Hutchinson (2006) <b>“Action Based Learning: Goals and Attention in the Acquisition of Market Knowledge,”</b> Journal of Marketing Research, 43, 2, pp. 244-258.
+            <br><br>
+            Hutchinson, J. Wesley and Eric M. Eisenstein (2008)<b>  “Consumer Learning and Expertise,” </b> in The Handbook of Consumer Psychology, Haugtvedt, Herr, and Kardes, eds., Lawrence Erlbaum Associates, Mahwah, NJ. 
+            <br><br>
+            
+            
+            </p>
+          </div>
+        </div>
+      </div>
+</div>
+</div>>
+	
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://www.fox.temple.edu/cms/wp-content/themes/fox/assets/js/jquery.fancybox.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://www.fox.temple.edu/centennial/wp-content/themes/foxcentennial/scripts/jquery.scrolltofixed.min.js?ver=1.1"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+			$(document).ready(function() {
+			
+			$(".fancybox").fancybox({
+                            touch: false
+			});
+			});
+			
+			$(".portraitHead").hover(over, out);
+			function over(){
+			TweenMax.to(this, 0.3, {backgroundColor:"#a41e35"}),
+			TweenMax.to(this,  0.3,{width:200})
+			};
+			function out(){
+			TweenMax.to(this, 0.3, {backgroundColor:"rgba(34,34,34,0.43)"}),
+			TweenMax.to(this,  0.3,{width:150})
+			};
+			
+			$("#learnsanat").hover(Hover, Hout);
+			$("#learnPaul").hover(Hover, Hout);
+			$("#learnEdo").hover(Hover, Hout);
+			function Hover(){
+			TweenMax.to(this, 0.3, {color:"#feb426"})
+			};
+			function Hout(){
+			TweenMax.to(this, 0.3, {color:"#a41e35"})
+			};
+			
+			document.getElementById("learnsanat").onclick = function () {
+                            window.open('https://cis.temple.edu/user/171','_blank');
+                        };
+                        
+                        document.getElementById("learnPaul").onclick = function () {
+                            window.open('https://www.fox.temple.edu/mcm_people/paulpavlou/','_blank');
+                        };
+                        
+                        document.getElementById("learnEdo").onclick = function () {
+                            window.open('https://www.fox.temple.edu/mcm_people/edoardo-airoldi/','_blank');
+                        };
+                        
+                        $(document).ready(function() {
+
+           $('.categories').scrollToFixed({
+                preFixed: function() { $('.categories').css('background-color', '#222222'); },
+                postFixed: function() { $('.categories').css('background-color', '#a41e35'); }
+    });
+        });
+        
+         $(function() {
+        $('.categories li').hover(
+            function(){ $(this).addClass('open') },
+            function(){ $(this).removeClass('open') }
+        );
+    });
+
+	</script>
+
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+</script>
+	
+<script>
+	
+$(document).ready(function(){
+
+$(".filter-button").click(function(){
+var value = $(this).attr('data-filter');
+
+if(value == "all")
+{
+
+$('.filter').show('1000');
+}
+else
+{
+
+$(".filter").not('.'+value).hide('3000');
+$('.filter').filter('.'+value).show('3000');
+
+}
+});
+
+if ($(".filter-button").removeClass("active")) {
+$(this).removeClass("active");
+}
+$(this).addClass("active");
+
+});
+</script>
+</body>
+
+</html>

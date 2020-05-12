@@ -1,0 +1,1824 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset = "utf-8">
+    <meta name    = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Data Science Leaders 9-5</title>
+	<link href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+	
+    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/darkly/bootstrap.min.css">
+  
+    <link rel = "stylesheet" href = "https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <link rel = "stylesheet" href = "https://www.fox.temple.edu/cms/wp-content/themes/fox/assets/css/jquery.fancybox.css" type = "text/css" media = "all">
+</head>
+
+<style>
+
+body{
+    background-color: white !important;
+    color           : #222 !important;
+}
+/*                      header                                 */
+@media (max-width: 991px) {
+  .Hero {
+    background       : url(https://www.fox.temple.edu/cms/wp-content/uploads/2018/09/Website-header-v5-01_animated.svg);
+    background-color : white;
+    background-repeat: no-repeat;
+    background-size  : cover;
+    padding-bottom   : 100px;
+    height           : auto;
+  }
+}
+
+@media all and (min-width: 991px) {
+  .Hero {
+    background       : url(https://www.fox.temple.edu/cms/wp-content/uploads/2018/09/Website-header-v5-01_animated.svg);
+    background-color : white;
+    background-repeat: no-repeat ;
+    background-size  : cover ;
+    padding-bottom   : 100px ;
+    height           : 200px;
+  }
+}
+
+  #heading {
+  color: black;
+  }
+  
+@media all and (max-width: 767px) {
+  #heading {
+    font-size    : 60px ;
+    font-family  : 'Open Sans' ;
+    line-height  : 70px ;
+    margin-bottom: -10px ;
+  }
+}
+
+@media (min-width:767px) and (max-width: 991px) {
+  #heading {
+    font-size    : 60px ;
+    font-family  : 'Open Sans' ;
+    margin-bottom: -60px ;
+  }
+}
+
+@media (min-width: 991px) {
+  #heading {
+    font-size    : 79px ;
+    font-family  : 'Open Sans' ;
+    margin-bottom: -30px ;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  #heading {
+    font-size    : 89px ;
+    font-family  : 'Open Sans' ;
+    margin-bottom: -70px ;
+
+  }
+}
+
+/*                      navbar                                 */
+.categories {
+  text-align      : center !important;
+  margin-bottom   : 0px !important;
+  padding         : 10px;
+  padding-bottom  : 0px;
+  background-color: #a41e35;
+}
+
+.categories li {
+  display: inline-block !important;
+  float  : none;
+}
+
+.customLink {
+  color          : white;
+  text-decoration: none;
+  font-weight    : 500;
+  transition     : 0.5s;
+}
+
+.customLink:hover, .customLink:focus {
+  background-color: #c30929;
+  text-decoration : none;
+}
+
+.dropdown-item{
+    color     : white;
+    transition: 1s;
+}
+
+.dropdown-item:hover{
+    text-decoration: none;
+    color          : white;
+}
+
+.dropdown-menu{
+    text-align        : Left;
+    -webkit-transition: height 0.65s ease;
+    transition        : height 0.65s ease;
+    margin-top        : 0px;
+}
+
+.dropdown-item-link{
+    padding   : 4px 0px 4px 15px;
+    margin    : 0 !important;
+    transition: 0.5s;
+}
+
+.dropdown-item-link:hover{
+    color           : #222;
+    background-color: white;
+}
+
+/*                                       leaders                                     */
+@media all and (min-width: 1200px) {
+  .portraitDiv {
+    padding: 0 0px 0 0px;
+  }
+}
+
+.portraitDiv {
+  display  : flex;
+  flex-flow: wrap;
+}
+
+.portraitHead {
+  position   : absolute;
+  bottom     : 40px;
+  right      : 0px;
+  background : rgba(34,34,34,0.43);
+  padding    : 4px 8px;
+  color      : rgb(255,255,255);
+  margin     : 0;
+  font-family: 'Open Sans';
+  font-weight: 100;
+  overflow   : auto;
+  width      : auto;
+  transition : width 2s;
+}
+
+.portrait {
+  width          : 230px;
+  height         : 360px;
+  float          : left;
+  background-size: cover;
+  position       : relative;
+  margin         : 0 auto;
+  margin-top     : 10px;
+  margin-bottom  : 10px;
+  justify-content: space-evenly;
+}
+
+#portrait2 {
+  background-color   : rgb(255,169,89);
+  background         : url(https://www.fox.temple.edu/cms/wp-content/uploads/2014/12/pavlou_paul-e1510246848633.jpg);
+  background-repeat  : no-repeat;
+  background-size    : cover;
+  background-position: 50% 70%;
+}
+
+#portrait3 {
+  background-color   : rgb(19,247,206);
+  background         : url(https://www.fox.temple.edu/cms/wp-content/uploads/2018/08/jr-Edoardo-Airoldi_03.jpg);
+  background-repeat  : no-repeat;
+  background-size    : cover;
+  background-position: 50% 100%;
+}
+
+@media (max-width:690px){
+#portrait3 {
+  margin-top: 150px;
+}
+}
+
+@media (max-width:459px){
+#portrait2 {
+  margin-top: 150px;
+}
+}
+
+#portrait1 {
+  background-color   : pink;
+  background         : url(https://www.fox.temple.edu/wp-content/uploads/2012/02/jr-Sanat-Sarkar_05-e1510164320112-200x300.jpg);
+  background-repeat  : no-repeat;
+  background-size    : 120%;
+  background-position: 50% 1%;
+}
+
+.facultyheading {
+  text-align    : center;
+  font-family   : 'Open Sans';
+  font-size     : 4em;
+  font-weight   : 200;
+  text-transform: uppercase;
+  margin-bottom : 30px !important;
+}
+
+.facultyName {
+  font-family   : 'Open Sans';
+  text-transform: uppercase;
+  font-weight   : 700;
+  font-size     : 2em;
+  margin-bottom : 5px !important;
+  margin-left: 15px;
+}
+
+.facultyDes {
+  max-width: 80%;
+  margin   : 0 auto !important;
+}
+
+.facultyRow {
+  margin: 50px 0;
+}
+
+.StudentName {
+  font-family   : 'Open Sans';
+  text-transform: uppercase;
+  font-weight   : 700;
+  font-size     : 1.5em;
+  margin-left: 15px;
+}
+
+@media (max-width:767px){
+    .facultyRow {
+  margin-top   : 0px;
+  margin-bottom: 0px;
+}
+
+    .facultyName {
+    margin-top: 30px !important;
+    }
+}
+
+.portraitName {
+  
+  font-family   : 'Open Sans';
+  font-weight   : 700;
+  font-size     : 3em;
+  text-transform: uppercase;
+  text-align    : center;
+}
+
+.portraitMore {
+  font-family   : 'Open Sans';
+  font-size     : 1.9em;
+  letter-spacing: 4px;
+  margin-bottom : 0px !important;
+}
+
+.facultyLeadDes {
+  font-family   : 'Open Sans';
+   
+  text-transform: uppercase;
+  text-align    : center;
+
+}
+
+.portraitTitleTitle {
+  font-family: 'Open Sans';
+  font-weight: 500;
+  font-size  : 1.2em;
+}
+
+.portraitTitleSub {
+  font-family: 'Open Sans';
+  font-size  : 0.9em;
+}
+
+#title1 {
+  bottom  : -210px;
+  position: absolute;
+}
+
+#title2 {
+  position: absolute;
+  bottom  : -260px;
+}
+
+#title3 {
+  position: absolute;
+  bottom  : -90px;
+}
+
+.facultySection{
+    margin-top   : 50px;
+    margin-bottom: 100px;
+    padding      : 0 0px;
+}
+
+@media (max-width:566px){
+    .facultySection{
+        padding: 0 0px;
+    }
+}
+/*   popup inline lightbox      */
+
+.profImg {
+  right        : 17%;
+  position     : absolute;
+  width        : 230px !important;
+  height       : 230px;
+  border-radius: 50%;
+}
+
+@media (min-width:767px) and (max-width:1000px){
+    .profImg{
+        right: 7%;
+    }
+}
+
+@media (max-width:767px) {    
+    .profImg{
+        right        : 32%;
+        border-radius: 0;
+        margin-top   : 248px;
+    }
+    
+    .bioName{
+        text-align   : center;
+        margin-bottom: 70px;
+    }
+    
+    #sanatPic{
+         margin-top: 197px;
+    }
+}
+
+@media (max-width:700px) {    
+    .profImg{
+        margin-top: 272px;
+    }
+    
+}
+
+
+@media (max-width:767px) {    
+    #edoPic{
+         margin-top: 186px;
+    }
+}
+
+@media (min-width:667) and (max-width:700px) {    
+    #sanatPic{
+         margin-top: 246px;
+    }
+}
+
+@media (min-width:557px) and (max-width:647px){
+    #sanatPic{
+         margin-top: 246px;
+    }
+}
+
+@media (min-width:472px) and (max-width:513px){
+    #sanatPic{
+         margin-top: 346px;
+    }
+}
+
+@media (min-width:472px) and (max-width:599px){
+    #edoPic{
+         margin-top: 296px;
+    }
+}
+
+@media (max-width:392px){
+    #sanatPic{
+         margin-top: 429px;
+    }
+    
+    #edoPic{
+        margin-top: 324px;
+    }
+}
+
+@media (min-width:553px) and (max-width:556px){
+    #sanatPic{
+         margin-top: 261px;
+    }
+}
+
+@media (min-width:393px) and (max-width:471px){
+    #edoPic{
+         margin-top: 297px;
+    }
+}
+
+@media (min-width:461px) and (max-width:552px){
+    #sanatPic{
+         margin-top: 347px;
+    }
+}
+
+@media (min-width:393px) and (max-width:461px){
+    #sanatPic{
+         margin-top: 372px;
+    }
+}
+
+@media (min-width:389px) and (max-width:392px){
+    #sanatPic{
+         margin-top: 379px;
+    }
+}
+
+@media (min-width:385px) and (max-width:386px){
+    #sanatPic{
+         margin-top: 429px;
+    }
+}
+
+
+
+@media (min-width:385px) and (max-width:387px){
+    #sanatPic{
+         margin-top: 399px;
+    }
+}
+
+@media (min-width:453px) and (max-width:569px){
+    .profImg{
+        right: 25%;
+    }
+}
+
+@media (max-width:453px){
+    .profImg{
+        right: 16%;
+    }
+}
+
+@media (min-width:471px) and (max-width:511px){
+    .profImg{
+        margin-top: 303px;
+    }
+}
+
+@media (min-width:419px) and (max-width:471px){
+    .profImg{
+        margin-top: 417px;
+    }
+}
+
+@media (max-width:419px){
+    .profImg{
+        margin-top: 444px;
+    }
+}
+
+.bioName {
+  font-family  : 'Open Sans';
+  font-size    : 4.5em;
+  font-weight  : 200;
+  margin-bottom: 0px;
+  margin-left  : 14px;
+}
+
+.bioTitle {
+  font-family  : 'Open Sans';
+  font-size    : 1.6em;
+  font-weight  : 200;
+  text-align   : left;
+  padding-left : 0px;
+  margin-bottom: 0px;
+  line-height  : 27px;
+}
+
+.bioTitleSub {
+  font-family  : 'Open Sans';
+  font-size    : 1.4em;
+  font-weight  : 200;
+  padding-top  : 9px;
+  margin-bottom: 0px;
+  padding-top  : 0px;
+  padding-left : 10px;
+}
+
+.testspan {
+  width        : 100px;
+  height       : 1px;
+  border-bottom: 3px solid red;
+}
+
+.bioDesription {
+  font-family   : 'Open Sans';
+  font-weight   : 200;
+  font-size     : 1.3em;
+  max-width     : 1060px;
+  margin        : 0 auto;
+  padding-top   : 250px;
+  line-height   : 32px;
+  letter-spacing: 0.8px;
+  padding-left  : 30px;
+  padding-right : 30px;
+}
+
+#sanat{
+  overflow-x: hidden;
+}
+
+#learnsanat{
+    color: #a41e35;
+}
+
+
+#learnPaul{
+    color: #a41e35;
+}
+
+
+#learnEdo{
+    color: #a41e35;
+}
+
+.facultyNameLink{
+    color: #222;
+}
+
+.facultyNameLink:hover{
+    color: #a41e35;
+}
+
+ /*                    anchor                                  */
+ #leadersanchor{
+     display   : block;
+     position  : relative;
+     top       : -200px;
+     visibility: hidden;
+ }
+ 
+ #facultyanchor{
+     display   : block;
+     position  : relative;
+     top       : -130px;
+     visibility: hidden;
+ }
+</style>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding         : 20px;
+  font-family     : Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin   : auto;
+}
+
+h1 {
+  font-size : 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float  : left;
+  width  : 33.33%;
+  display: none;    /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear  : both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding         : 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border          : none;
+  outline         : none;
+  padding         : 12px 16px;
+  background-color: white;
+  cursor          : pointer;
+}
+ 
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #9c0929;
+  color           : white;
+}	
+</style>
+	
+<style>
+	
+ .gallery-title {
+     font-size    : 36px;
+     color        : #FFA500;
+     text-align   : center;
+     font-weight  : 500;
+     margin-bottom: 70px
+ }
+
+ .gallery-title:after {
+     content      : "";
+     position     : absolute;
+     width        : 22.5%;
+     left         : 38.5%;
+     height       : 45px;
+     border-bottom: 1px solid #5e5e5e
+ }
+
+ .filter-button {
+     font-size    : 18px;
+     border       : 1px solid #9c0929;
+     border-radius: 5px;
+     text-align   : center;
+     color        : #9c0929;
+     margin-bottom: 30px
+ }
+
+ .filter-button:hover {
+     font-size       : 18px;
+     border          : 1px solid #9c0929;
+     border-radius   : 5px;
+     text-align      : center;
+     color           : #fff;
+     background-color: #9c0929
+ }
+
+ .button-default:active,.filter-button:active {
+     background-color: #9c0929;
+     color           : #9c0929
+ }
+
+ .port-image {
+     width: 100%
+ }
+
+ .container2
+ {
+  width:1500px; 
+  margin:0 auto;  
+ }
+
+.Buttons
+ {
+    margin-left: 350px;
+ }
+
+ @media (max-width:768px)
+ {
+
+  .container2
+  {
+    width:400px; 
+    height: auto;
+    background-color: aquamarine;
+    margin:0 auto; 
+  }
+
+  .Buttons
+  {
+    margin-left: 0px;
+    float:left;
+  }
+
+}
+
+ .gallery_product {
+     margin-bottom: 30px;
+     margin-left: 5px;
+     height       : 400px;
+     width: 350px;
+     display: inline-block
+  
+ }
+
+ .gallery_product a img{
+     object-fit:cover;
+     height: 200px;
+     width : 200px;
+	 
+ }
+
+ img {
+     box-shadow   : 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+     border-radius: 5px
+ }
+	
+</style>	
+<style>
+
+
+	.sidebar2 {
+		width   : 250px;
+		height  : auto;
+		overflow: auto;
+		float   : left ;
+		
+	}
+.sidebar2 a {
+  display        : block;
+  color          : black;
+  padding        : 16px;
+  text-decoration: none;
+}
+ 
+.sidebar2 a.active {
+  background-color: #a41e35;
+  color           : white;
+}
+
+.sidebar2 a:hover:not(.active) {
+  background-color: #555;
+  color           : white;
+}
+
+div.content2 {
+  margin-left: 10px;
+  
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar2 {
+    
+    height  : auto;
+    position: relative;
+  }
+  .sidebar2 a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar2 a {
+    text-align: center;
+    float     : none;
+  }
+}	
+	
+</style>	
+<style>
+  body
+  {
+      margin: 0px;
+      padding: 0px;
+      font-family: 'Poppins' , sans-serif;
+  }
+  
+  nav
+  {
+      width: 100%;
+      background: brown;
+  }
+  
+  nav ul
+  {
+      display: flex;
+      justify-content:center;
+      font-size: 22px;
+      max-width: auto;
+      margin: 0 auto;
+      padding: 0;
+  }
+  
+  nav ul li
+  {
+      list-style: none;
+      position: relative;
+      padding: 10px 20px;
+      transition: 0.5s;
+      box-sizing: border-box;
+      border-right: 1px solid rgba(255,255,255,.2);
+  }
+  nav ul li:hover
+  {
+      background-color: brown;
+  }
+  
+  nav ul li:last-child
+  {
+      border-right: none;
+  }
+  
+  nav ul li a
+  {
+      text-decoration:none;
+      padding: 0 20px;
+      color: #fff;
+  }
+  
+  nav ul li ul
+  {
+      position: absolute;
+      top: 49px;
+      Left: 0;
+      background-color: brown;
+      display:block;
+      width: 450px;
+      transition: 0.5s;
+      opacity: 0;
+      visibility: hidden;
+  }
+  
+  nav ul li:hover ul
+  {
+      opacity: 1;
+      visibility: visible;
+  }
+  
+  nav ul li ul li
+  {
+      border-right: none;
+      border-bottom: 1px solid rgba(255,255,255,.2) ;
+  }
+  .toggle
+  {
+      width: 100%;
+      padding: 0px 25px;
+      background: brown ;
+      text-align: right;
+      box-sizing: border-box;
+      font-size: 30px;
+      font-weight:bold;
+      color: #fff;
+      display: none;
+  }
+  
+  @media (max-width: 768px)
+  {
+      nav ul
+      {
+          display: none;
+      }
+  
+      nav ul li
+      {
+          display: block;
+          border-bottom: 1px solid rgba(255,255,255,.2);
+  
+      }
+  
+      nav ul li ul 
+      {
+          width: 100%;
+          z-index: 1;
+      }
+  
+      .toggle
+      {
+          display: block;
+      }
+  
+      .active
+      {
+          display: block;
+      }
+  
+  }
+  
+  
+.navigation{
+text-align: left;
+background-color:#ededed;
+height: 30px;
+
+
+}
+
+.navigation a{
+color: #8f0404;
+}
+  
+  
+  
+  </style>
+<body>
+<!-------------------------------------------------------------Head------------------------------------------------------------------->
+    <section >
+    
+        <div class = "Hero">
+        <div class = "container">
+        <div class = "row">
+        <div class = "col-md-12">
+        <p   class = "text-center" id = "heading" style = "font-family:'Open Sans', sans-serif;margin-top:20px;text-transform: uppercase;"><strong>People</strong><br></p>
+                    </div>
+                </div>
+        </div>
+        </div>
+    </section>
+<!---------------------------------------------------------------Navbar----------------------------------------------------------------->
+
+<nav>
+  <div  class    = "toggle">
+      <div class = 'menu'>
+          &#9776; 
+      </div>
+  </div>
+  <ul>
+    <li><a href='https://www.statisticsattemplefox.info/'>Home</a>
+      <li style="color: white;">Academics</a>
+      <ul>
+        <li><a href="https://www.statisticsattemplefox.info/Undergraduate">Undergraduate</a></li>
+        <li><a href="https://www.statisticsattemplefox.info/Graduate">Graduate</a></li>
+        <li><a href="https://www.statisticsattemplefox.info/Doctoral">Doctoral</a></li>
+    </ul>
+  </li>     
+      <li style="color: white;">Research
+      <ul>
+        <li><a href="https://www.statisticsattemplefox.info/researcher-areas">Research Areas</a></li>
+        <li><a href="https://www.statisticsattemplefox.info/grants">Grants</a></li>
+        <li><a href="https://www.statisticsattemplefox.info/center-for-hdm">Center for High-Dimension Math</a></li>
+        <li><a href="https://www.statisticsattemplefox.info/data-science-center">Data Science Center</a></li>
+        
+    </ul>
+  </li>
+      <li style="color: white;">People
+          <ul>
+              <li><a href="https://www.statisticsattemplefox.info/leadership">Leadership</a></li>
+              <li><a href="https://www.statisticsattemplefox.info/people">Faculty</a></li>
+              <li><a href="https://www.statisticsattemplefox.info/researchers">Post-Docs</a></li>
+              <li><a href="https://www.statisticsattemplefox.info/students">Students</a></li>
+              <li><a href="https://www.statisticsattemplefox.info/staff">Staff</a></li>
+          </ul>
+      </li>
+      <li style="color: white;">Resources
+      <ul>
+        <li><a href="https://www.statisticsattemplefox.info/news-events">News and Events</a></li>
+        <li><a href="https://www.statisticsattemplefox.info/consulting-center">Center for Statistical Analysis</a></li>
+        <li><a href="https://www.statisticsattemplefox.info/student-association">Student Associations</a></li>
+      </ul>
+    </li>
+      <li style="color: white;">About Us
+      <ul>
+        <li><a href="https://www.statisticsattemplefox.info/history">History</a></li>
+        <li><a href="https://www.statisticsattemplefox.info/open-position">Open Position</a></li>
+        <li><a href="https://www.statisticsattemplefox.info/contact-us">Contact Us</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>   
+
+
+  <!-----------------------------------------------------------------Body--------------------------------------------------------------------------------------------> 
+	<div class = "container" style="background-color: #e8e4e1; width: 100%; padding-bottom: 150px;"> 
+	<div style = "max-width:1100px; margin: auto; text-align: justify;margin-top:50px;">
+       
+        <p class = "lead" style = "font-size:18px ;max-width:90%;margin:auto;color:#222;">
+          Harnessing the efforts of data scientists across disciplines, Temple University’s Statistical Science Department serves as the institutional infrastructure that unites diverse research efforts to achieve outstanding impact. The led by Sanat Sarkar  of the Fox School of Business fosters academic, practice-oriented, and translational research and teaching.
+        </p>
+       
+        </div>
+        
+  <!-- Sibin  
+    <section style = "margin-top:40px;">
+    <div     style = "margin-bottom:20px;">
+    <h2      style = "margin:0 auto;max-width:1180px;text-align:center;" class = "text-capitalize"><strong>Meet the Leader </strong></h2>
+    <span    id    = "leadersanchor"></span>
+        </div>
+         
+          
+          <div class = "portraitDiv align:center" >
+          <div id    = "portrait1" class = "col-xs-12 portrait">     
+              <a   id    = "inline" class = "fancybox" href = "https://www.statisticsattemplefox.info/people/edoardo/">
+              <div class = "portraitHead">
+              <p   class = "portraitMore">Full Bio</p>
+              </div></a>
+-->
+              <!--<div id    = "title1" class   = "portraitTitle">
+              <div     class = "row">
+              <div     class = "col-xs-4" style = "padding:0;">
+              <p       class = "portraitTitleTitle">Director<br></p>
+                      </div>
+                      <div class = "col-xs-8" style = "padding:0;padding-left:13px;padding-top:3px;">
+                      <p   class = "portraitTitleSub">Center for Data Analytics and Biomedical Informatics&nbsp;<br></p>
+                      </div>
+                  </div>
+                  <div class = "row">
+                  <div class = "col-xs-4" style = "padding:0;">
+                  <p   class = "portraitTitleTitle">Professor<br></p>
+                      </div>
+                      <div class = "col-xs-8" style = "padding:0;padding-left:13px;padding-top:3px;">
+                      <p   class = "portraitTitleSub">Computer and Information Sciences Department&nbsp;<br></p>
+                      </div>
+                  </div>
+                  <div class = "row">
+                  <div class = "col-xs-4" style = "padding:0;">
+                  <p   class = "portraitTitleTitle">Professor</p>
+                      </div>
+                      <div class = "col-xs-8" style = "padding:0;padding-left:13px;padding-top:3px;">
+                      <p   class = "portraitTitleSub">Laura H. Carnell&nbsp;Data Analytics&nbsp;<br></p>
+                      </div>
+                  </div>
+              </div>-->
+          </div>
+    <!-- Sibin
+    <div style = "display:none; width:1400px; overflow:hidden;">
+    <div id    = "sanat" >
+    <div style = "max-width:1200px;margin:0 auto;">
+    <div class = "col-sm-4 col-xs-12"><img src = "https://www.fox.temple.edu/wp-content/uploads/2012/02/jr-Sanat-Sarkar_05-e1510164320112-200x300.jpg" class = "profImg" id = "sanatPic" style = "top:10px;"></div>
+    <div class = "col-sm-8">
+    <div class = "row">
+    <div class = "col-md-12" style             = "padding-left:0px;">
+              <div>
+                <p class = "bioName">sanat Obradovic<br></p>
+              </div>
+            </div>
+          </div>
+          <div class = "row" style         = "">
+          <div class = "col-sm-12" style   = "padding:0px 0 10px 0;">
+          <p   class = "bioTitle">Director, Center for Data Analytics and Biomedical Informatics<br></p>
+            </div>
+          </div>
+          <div class = "row" style          = "">
+          <div class = "col-sm-12" style    = "padding:0px 0 10px 0;">
+          <p   class = "bioTitle">Professor, Computer and Information Sciences Department<br></p>
+            </div>
+          </div>
+          <div class = "row" style                           = "">
+          <div class = "col-sm-12" style                     = "padding:0px 0 10px 0;">
+          <p   class = "bioTitle">Laura H. Carnell Professor, Data Analytics<br></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class = "bioDesription" style = "padding-top:260px;">Zoran Obradovic is a L.H. Carnell Professor of Data Analytics at Temple University, Professor in the Department of Computer and Information Sciences with a secondary appointment in Statistics, and is the Director of the Center for Data Analytics
+          and Biomedical Informatics. He is the executive editor at the journal on <em>Statistical Analysis and Data Mining</em>, which is the official publication of the American Statistical Association and is an editorial board member at eleven journals.
+          He is the chair at the SIAM Activity Group on Data Mining and Analytics for 2014 and 2015 years, was co-chair for 2013 and 2014 SIAM International Conference on Data Mining and was the program or track chair at many data mining and biomedical
+          informatics conferences. &nbsp;His work is published in more than 300 articles and is cited more than 15, 000 times (H-index 48). In 2015, he became an elected member of Academia Europaea (the Academy of Europe).&nbsp; <br><span id = "learnsanat">Learn more about Zoran.</span><br><br>
+          
+        Email : zoran.obradovic@temple.edu<br>
+        Office: SERC Room 382<br></p>
+      </div>
+    </div>
+    </div>
+    -->
+    <!--
+          <div id    = "portrait2" class = "col-xs-12 portrait">
+          <div class = "portraitName">
+                  <p>Paul A. Pavlou<br></p>
+              </div>
+              <a id    = "inline1" class = "fancybox" href = "#paul"><div class = "portraitHead">
+              <p class = "portraitMore">Full Bio</p>
+              </div></a>
+              <div id    = "title2" class                             = "portraitTitle">
+              <div     class = "row">
+              <div     class = "col-xs-12" style                          = "padding:0;">
+              <p       class = "portraitTitleTitle">Senior Associate Dean, Research, Doctoral Programs, and Strategic Initiatives<br></p>
+                      </div>
+                  </div>
+        <div class = "row">
+        <div class = "col-xs-12" style              = "padding:0;">
+        <p   class = "portraitTitleTitle">Professor, Milton F. Stauffer&nbsp;Information Technology and Strategy<br></p>
+                      </div>
+                  </div>
+                  <div class = "row">
+                  <div class = "col-xs-12" style                           = "padding:0;">
+                  <p   class = "portraitTitleTitle">Chief Research Officer, Fox School of Business<br></p>
+                      </div>
+                  </div>
+                  
+              </div>-->
+          </div>
+            
+            <!--
+            <div style = "display:none;  overflow:hidden;">
+            <div id    = "paul">
+            <div style = "max-width:1200px;margin:0 auto;">
+            <div class = "col-sm-4 col-xs-12"><img src = "/cms/wp-content/uploads/2018/06/sanat_sarkar.png" class = "profImg" style = "top:20px;"></div>
+            <div class = "col-sm-8">
+            <div class = "row">
+            <div class = "col-md-12" style             = "padding-left:0px;">
+              <div>
+                <p class = "bioName">Paul A. Pavlou<br></p>
+              </div>
+            </div>
+          </div>
+          <div class = "row" style                      = "padding:0px 0 10px 0;">
+          <div class = "col-sm-12" style                = "padding:0;">
+          <p   class = "bioTitle">Senior Associate Dean, Research, Doctoral Programs, and Strategic Initiatives<br></p>
+            </div>
+          </div>
+          <div class = "row" style                       = "padding:10px 0;">
+          <div class = "col-sm-12" style                 = "padding:0;">
+          <p   class = "bioTitle">Chief Research Officer, Fox School of Business<br></p>
+            </div>
+          </div>
+          <div class = "row" style                              = "padding:10px 0;">
+          <div class = "col-sm-12" style                        = "padding:0;">
+          <p   class = "bioTitle" >Milton F. Stauffer Professor, Information Technology and Strategy<br></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class = "bioDesription" style = "padding-top:270px;">Paul is the Milton F. Stauffer Professor of Information Technology and Strategy and the Senior Associate Dean of Research, Doctoral Programs, and Strategic Initiatives with the Fox School of Business. Paul also serves as Director of the Fox School’s
+      Data Science Center. Paul was ranked first in the world in publications in the two top MIS journals (MISQ and ISR) for 2010-2012. A distinguished researcher, Paul has earned more than 13,000 citations and was recognized among the “World’s Most
+      Influential Scientific Minds” by Thomson Reuters based on analysis of highly cited publications during the 2002-2012 period. His research appeared in<em> MIS Quarterly (MISQ), Information Systems Research (ISR), Journal of Marketing, Journal of Management Information Systems (JMIS), Journal of the Association of Information Systems (JAIS), Journal of the Academy of Marketing Science (JAMS), and Decision Sciences</em>,
+      among others and focuses on e-commerce strategy, digital business strategy, and development of research methods. He received his Ph.D. from the University of Southern California in 2004.<br><span id = "learnPaul"> Learn more about Paul. </span><br><br>
+      
+      Email : pavlou@temple.edu<br>
+      Office: Alter Hall 334<br></p>
+      </div>
+    </div>
+    </div>
+    -->
+    <!--
+          <div id    = "portrait3" class      = "col-xs-12 portrait">
+          <div class = "portraitName"><a href="https://www.statisticsattemplefox.info/faculty-directory/" target="_blank" class="facultyNameLink" rel="noopener noreferrer">
+                  <p>Edoardo M. Airoldi<br></p></a>
+              </div>
+               <a id    = "inline2" class = "fancybox" href = "#edoardo"><div class = "portraitHead">
+               <p class = "portraitMore">Full Bio</p>
+              </div></a>
+          -->
+              <!--<div id    = "title3" class   = "portraitTitle">
+              <div     class = "row">
+              <div     class = "col-xs-4" style = "padding:0;">
+              <p       class = "portraitTitleTitle">&nbsp;Professor</p>
+                      </div>
+                      <div class = "col-xs-8" style = "padding:0;padding-left:13px;padding-top:3px;">
+                      <p   class = "portraitTitleSub">Millard E. Gladfelter Statistics and Data Science<br></p>
+                      </div>
+                  </div>
+              </div>-->
+          <!--
+          </div>
+          
+          <div style = "display:none; width:1400px; overflow:hidden;">
+          <div id    = "edoardo" >
+          <div style = "max-width:1200px;margin:0 auto;">
+          <div class = "col-sm-4 col-xs-12"><img src = "/cms/wp-content/uploads/2018/09/Edoardo-Airoldi.jpg" class = "profImg"
+               id    = "edoPic" style                = "top:0px;"></div>
+          <div class = "col-sm-8">
+          <div class = "row">
+          <div class = "col-md-12" style             = "padding-left:0px;">
+              <div>
+                <a href = "https://www.statisticsattemplefox.info/faculty-directory/"><p class = "bioName">Edoardo M. Airoldi <br></p></a>
+              </div>
+            </div>
+          </div>
+          <div class = "row" style            = "padding:0px 0 10px 0;">
+          <div class = "col-sm-12" style      = "padding:0;">
+          <p   class = "bioTitle">Co-Director, Data Science Institute<br></p>
+            </div>
+          </div>
+          <div class = "row" style                                = "padding:10px 0;">
+          <div class = "col-sm-12" style                          = "padding:0;">
+          <p   class = "bioTitle">Millard E. Gladfelter Professor, Statistics and Data Science<br></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class = "bioDesription">Airoldi is the Millard E. Gladfelter Professor of Statistics and Data Science and also serves as Director of the Fox School’s Data Science Center. Airoldi joined the Fox School in 2018 from Harvard University, where he had served since 2009 as a full-time
+      faculty member in the Department of Statistics. A distinguished researcher, Airoldi has authored more than 150 publications and earned more than 13,000 citations. His work focuses on statistical theory and methods for designing and analyzing experiments
+      on large networks and, more generally, modeling and inferential issues that arise in analyses that leverage network data. Airoldi earned his PhD in Computer Science from Carnegie Mellon University, where he also received his Master of Science
+      degrees in Statistics and Statistical and Computational Learning. He earned a Bachelor of Science in Mathematical Statistics and Economics from Italy’s Bocconi University.<br><span id = "learnEdo"> Learn more about Edo.</span><br><br>
+      Email : airoldi@temple.edu<br>
+      Office: Speakman Hall 366/390h<br></p>
+      </div>
+    </div>
+    </div>
+    
+  </div>-->
+<!-- Sibin   <div class = "portraitName">
+    <a href="https://www.statisticsattemplefox.info/people/sanat/" style="color: black;"><p><strong>Sanat Sarkar</strong></p>   </a>
+  </div>
+
+  <div class = "facultyLeadDes">
+    <p><strong>Cyrus H.K. Curtis Professor & Chair</strong></p>
+  </div>
+-->
+</div>      
+    </section>
+		
+		
+	<section class = "facultySection align:center" >
+		<div>
+      <h1 style = "margin:0 auto; margin-bottom:30px; padding-bottom:10px; padding-top:20px;max-width:500px;text-align:center;">Meet the People </h1>
+  </div>
+	<!--<div class = "sidebar2">
+	<a       class = "btn btn-default filter-button" data-filter = "all">All</a>
+	<a       class = "btn btn-default filter-button" data-filter = "faculty">Faculty</a>
+	<a       class = "btn btn-default filter-button" data-filter = "staff">Staff</a>
+	<a       class = "btn btn-default filter-button" data-filter = "RnDocs">Researchers and PostDocs</a>
+	<a       class = "btn btn-default filter-button" data-filter = "alumni">Student</a>
+	<a       class = "btn btn-default filter-button" data-filter = "alumni">Alumni</a>
+	</div>-->
+
+ <div>
+    <div class = "container2 align:center">
+
+        
+      <div class = "Buttons"> 
+        <!--<button class = "btn btn-default filter-button" data-filter = "all">All</button>-->
+        <button class = "btn btn-default filter-button" data-filter = "leadership">Leadership</button>
+        <button class = "btn btn-default filter-button " data-filter = "professors">Faculty</button>
+        <button class = "btn btn-default filter-button" data-filter = "adjFaculty">Adjunct Faculty</button>
+        <button class = "btn btn-default filter-button active" data-filter = "postdocs">Post-Docs</button>
+        <button class = "btn btn-default filter-button" data-filter = "staff">Staff</button>  
+        <!--<button class = "btn btn-default filter-button" data-filter = "alumni">Alumni</button> -->  
+        
+        <button class = "btn btn-default filter-button" data-filter = "students">Students</button>  <br />
+      </div> 
+      <div class        = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter leadership">  
+        <img src        = "http://www.statisticsattemplefox.info/wp-content/uploads/2019/12/SS1.jpg" class   = "img-responsive center-block" width                               = "200" height   = "250"></a>
+        <div style      = "text-align:center;">
+          <p   class    = "facultyName"><a href="https://www.statisticsattemplefox.info/people/sanat/" target="_blank" class="facultyNameLink" rel="noopener noreferrer">Sanat Sarkar
+          </a><br></p>
+          <p   class    = "facultyDes"><strong>Chair & Cyrus H.K. Curtis Professor </strong></p>
+          </div>
+      </div>
+
+      <div class        = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter professors">
+        <img src             = "http://www.statisticsattemplefox.info/wp-content/uploads/2019/12/Edo.jpg" class = "img-responsive center-block" width = "200" height = "150"></a>
+        <div style      = "text-align:center;">
+          <p   class    = "facultyName"><a href="https://www.statisticsattemplefox.info/people/edoardo" target="_blank" class="facultyNameLink" rel="noopener noreferrer">Edoardo Airoldi</a><br></p>
+          <p   class    = "facultyDes"><strong> Millard E. Gladfelter Professor, </strong>  Statistics & Data Science<br></p>
+          <p   class    = "facultyDes"><strong> Director,</strong>    Data Science Center<br></p>
+          <p   class    = "facultyDes"><strong>Co-Director,</strong> Data Science Institute<br></p>
+        </div>
+      </div>
+
+      <div class = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter professors">  
+        <img src                                                                 = "http://www.statisticsattemplefox.info/wp-content/uploads/2020/01/jr-Michael-Boldin_018-200x300-1.jpg" class = "img-responsive center-block" width = "200" height                   = "250"></a>
+      <div style = "text-align:center;">
+        <p   class = "facultyName"><a href="https://www.statisticsattemplefox.info/people/boldwin/" target="_blank" class="facultyNameLink" rel="noopener noreferrer">Michael Boldin</a><br></p>
+        <p   class = "facultyDes"><strong>Assistant Professor</strong><br></p>
+      </div>
+    </div>
+  
+
+      <div class        = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter chair leadership">  
+        <img src        = "http://www.statisticsattemplefox.info/wp-content/uploads/2020/01/Pallavi-Chitturi-e1578533508932.jpg" class   = "img-responsive center-block" width                               = "200" height   = "250"></a>
+        <div style      = "text-align:center;">
+          <p   class    = "facultyName"><a href="https://www.statisticsattemplefox.info/people/pallavi/" target="_blank" class="facultyNameLink" rel="noopener noreferrer">Pallavi Chitturi 
+          </a><br></p>
+          <p   class    = "facultyDes"><strong>Deputy Chair</strong></p>
+          <p   class    = "facultyDes"><strong>Associate Director,</strong></strong><br>Executive DBA Program</p>
+          <p   class    = "facultyDes"><strong>Director,</strong> Center for Statistical Analysis Associate Professor</p>
+        </div>
+      </div>
+
+      <div class = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter professors">  
+        <img src                                                                 = "http://www.statisticsattemplefox.info/wp-content/uploads/2020/01/Lauren-Burns.jpg" class = "img-responsive center-block" width = "200" height          = "250"></a>
+      <div style = "text-align:center;">
+        <p   class = "facultyName"><a href="https://www.statisticsattemplefox.info/people/lauren/" target="_blank" class="facultyNameLink" rel="noopener noreferrer">Lauren Burns</a><br></p>
+        <p   class = "facultyDes"><strong>Assistant Professor of Instruction</strong><br></p>
+      </div>
+      </div> 
+
+      <div class    = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter professors">
+        <a   href     = ""> <img src          = "http://www.statisticsattemplefox.info/wp-content/uploads/2020/01/Alexandra-Carides-e1578533450891.jpg" class = "img-responsive center-block" width = "200" height              = "250"></a>
+        <div style    = "text-align:center;">
+          <p   class    = "facultyName"><a href="https://www.statisticsattemplefox.info/people/alexandra/" target="_blank" class="facultyNameLink" rel="noopener noreferrer">Alexandra Carides</a><br></p>
+          <p   class    = "facultyDes"><strong>Assistant Professor of Instruction </strong></p>
+        </div>
+      </div>
+
+
+
+  <div class = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter professors">  
+    <img src                                                                 = "http://www.statisticsattemplefox.info/wp-content/uploads/2020/01/Yuexiao-Dong.jpg" class = "img-responsive center-block" width = "200" height           = "250"></a>
+ <div style = "text-align:center;">
+   <p   class = "facultyName"><a href="https://www.statisticsattemplefox.info/people/yuexiao/" target="_blank" class="facultyNameLink" rel="noopener noreferrer">Yuexiao Dong</a><br></p>
+   <p   class = "facultyDes"><strong>Associate Professor</strong><br></p>
+ </div>
+</div>
+
+<div class = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter professors">  
+  <img src                                                                 = "http://www.statisticsattemplefox.info/wp-content/uploads/2020/01/Eric-Eisenstein-e1578533576769.jpg" class = "img-responsive center-block" width                                      = "200" height = "250"></a>
+<div style = "text-align:center;">
+  <p   class = "facultyName"><a href="https://www.statisticsattemplefox.info/people/eric/" target="_blank" class="facultyNameLink" rel="noopener noreferrer">Eric Eisenstein</a><br></p>
+  <p   class = "facultyDes"><strong>Director,                                                Master of Science</strong>,                                                  Business Analytics and Marketing<br> <strong>Associate Professor</strong>, Marketing and Supply Chain Management</p>
+</div>
+</div>
+
+
+<div class = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter professors">  
+  <img src                                                                 = "http://www.statisticsattemplefox.info/wp-content/uploads/2020/01/Xu-Han-e1578533483572.jpg" class = "img-responsive center-block" width = "200" height          = "250"></a>
+<div style = "text-align:center;">
+  <p   class = "facultyName"><a href="https://www.statisticsattemplefox.info/people/xuhan/" target="_blank" class="facultyNameLink" rel="noopener noreferrer">Xu Han</a><br></p>
+  <p   class = "facultyDes"><strong>Assistant Professor            </strong><br></p>
+</div>
+</div>
+
+<div class = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter professors researchers">  
+  <img src                                                                 = "http://www.statisticsattemplefox.info/wp-content/uploads/2020/01/Alan-Izenman-e1578533614879.jpg" class = "img-responsive center-block" width = "200" height              = "250"></a>
+<div style = "text-align:center;">
+  <p   class = "facultyName"><a href="https://www.statisticsattemplefox.info/people/alan/" target="_blank" class="facultyNameLink" rel="noopener noreferrer">Alan Izenman </a><br></p>
+  <p   class = "facultyDes"><strong>Professor and Senior Research Fellow </strong><br></p>
+</div>
+</div>
+
+<div class = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter professors">  
+  <img src                                                                 = "http://www.statisticsattemplefox.info/wp-content/uploads/2020/01/Darin-Kapanjie-e1578533588630.jpg" class = "img-responsive center-block" width = "200" height               = "250"></a>
+<div style = "text-align:center;">
+  <p   class = "facultyName"><a href="https://www.statisticsattemplefox.info/people/darin/" target="_blank" class="facultyNameLink" rel="noopener noreferrer">Darin Kapanjie</a><br></p>
+  <p   class = "facultyDes"><strong>Associate Professor of Instruction </strong><br></p>
+</div>
+</div>
+
+
+<div class = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter professors">  
+  <img src                                                                 = "http://www.statisticsattemplefox.info/wp-content/uploads/2020/01/Vishesh-Karwa-e1578533495186.jpg" class = "img-responsive center-block" width = "200" height            = "250"></a>
+<div style = "text-align:center;">
+  <p   class = "facultyName"><a href="https://www.statisticsattemplefox.info/people/vishesh/" target="_blank" class="facultyNameLink" rel="noopener noreferrer">Vishesh Karwa</a><br></p>
+  <p   class = "facultyDes"><strong>Assistant Professor</strong>                            <br></p>
+</div>
+</div>
+
+<div class = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter professors">  
+  <img src                                                                 = "http://www.statisticsattemplefox.info/wp-content/uploads/2020/01/Kuang-Yao-Lee-e1578533540534.jpg" class = "img-responsive center-block" width = "200" height          = "250"></a>
+<div style = "text-align:center;">
+  <p   class = "facultyName"><a href="https://www.statisticsattemplefox.info/people/kuang-yao-lee/" target="_blank" class="facultyNameLink" rel="noopener noreferrer">Kuang Yao Lee </a><br></p>
+  <p   class = "facultyDes"><strong>Assistant Professor</strong><br></p>
+</div>
+</div>  
+
+<div class = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter professors">  
+  <img src                                                                 = "http://www.statisticsattemplefox.info/wp-content/uploads/2020/01/Kenichiro-McAlinn-e1578533563179.jpg" class = "img-responsive center-block" width = "200" height                   = "250"></a>
+<div style = "text-align:center;">
+  <p   class = "facultyName"><a href="https://www.statisticsattemplefox.info/people/kenichiro/" target="_blank" class="facultyNameLink" rel="noopener noreferrer">Kenichiro McAlinn</a><br></p>
+  <p   class = "facultyDes"><strong>Assistant Professor</strong><br></p>
+</div>
+</div>
+
+<div class = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter professors">  
+  <img src                                                                 = "http://www.statisticsattemplefox.info/wp-content/uploads/2020/01/jr-Rob-Pred_01-e1510159742856-200x300-1.jpg" class = "img-responsive center-block" width = "200" height           = "250"></a>
+<div style = "text-align:center;">
+  <p   class = "facultyName"><a href="https://www.statisticsattemplefox.info/people/robert/" target="_blank" class="facultyNameLink" rel="noopener noreferrer"> Robert Pred</a><br></p>
+  <p   class = "facultyDes"><strong>Associate Professor </strong><br></p>
+</div>
+</div>  
+
+<div class = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter professors researchers">  
+  <img src                                                                 = "http://www.statisticsattemplefox.info/wp-content/uploads/2020/01/Donald-Rubin-HS.jpg" class = "img-responsive center-block" width = "200" height            = "250"></a>
+<div style = "text-align:center;">
+  <p   class = "facultyName"><a href="https://www.statisticsattemplefox.info/people/don/" target="_blank" class="facultyNameLink" rel="noopener noreferrer"> Don Rubin</a><br></p>
+  <p   class = "facultyDes"><strong>Murray Shusterman Sr. Res.Fellow</strong><br></p>
+</div>
+</div>
+
+<div class = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter professors">  
+  <img src                                                                 = "http://www.statisticsattemplefox.info/wp-content/uploads/2020/01/Marc-Sobel.jpg" class = "img-responsive center-block" width = "200" height            = "250"></a>
+<div style = "text-align:center;">
+  <p   class = "facultyName"><a href="https://www.statisticsattemplefox.info/people/marc/" target="_blank" class="facultyNameLink" rel="noopener noreferrer"> Marc Sobel</a><br></p>
+  <p   class = "facultyDes"><strong>Associate Professor</strong><br></p>
+</div>
+</div>
+
+<div class = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter professors">  
+  <img src                                                                 = "https://www.statisticsattemplefox.info/wp-content/uploads/2020/03/Cheng.png" class = "img-responsive center-block" width = "200" height           = "250"></a>
+<div style = "text-align:center;">
+  <p   class = "facultyName"><a href="https://www.statisticsattemplefox.info/cheng/" target="_blank" class="facultyNameLink" rel="noopener noreferrer"> Cheng Yong Tang</a><br></p>
+  <p   class = "facultyDes"><strong>Associate Professor</strong><br></p>
+</div>
+</div>
+
+<div class = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter professors">  
+  <img src                                                                 = "http://www.statisticsattemplefox.info/wp-content/uploads/2020/01/Reza-Vafa.jpg" class = "img-responsive center-block" width = "200" height           = "250"></a>
+<div style = "text-align:center;">
+  <p   class = "facultyName"><a href="https://www.statisticsattemplefox.info/people/reza/" target="_blank" class="facultyNameLink" rel="noopener noreferrer"> Reza Vafa</a><br></p>
+  <p   class = "facultyDes"><strong>Instructor Of Practice</strong><br></p>
+</div>
+</div>
+
+
+<div class = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter professors">  
+  <img src                                                                 = "http://www.statisticsattemplefox.info/wp-content/uploads/2020/01/WillaimWei2.jpg" class = "img-responsive center-block" width = "200" height          = "250"></a>
+<div style = "text-align:center;">
+  <p   class = "facultyName"><a href="https://www.statisticsattemplefox.info/people/william/" target="_blank" class="facultyNameLink" rel="noopener noreferrer"> William Wei</a><br></p>
+  <p   class = "facultyDes"><strong>Professor</strong><br></p>
+</div>
+</div>
+
+
+    <div class = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter professors">  
+        <img src                                                                 = "http://www.statisticsattemplefox.info/wp-content/uploads/2020/01/Gary-Witt.jpg" class = "img-responsive center-block" width = "200" height           = "250"></a>
+      <div style = "text-align:center;">
+          <p   class = "facultyName"><a href="https://www.statisticsattemplefox.info/people/gary/" target="_blank" class="facultyNameLink" rel="noopener noreferrer"> Gary Witt</a><br></p>
+          <p   class = "facultyDes"><strong>Associate Professor of Instruction </strong><br>     
+      </div>
+    </div>
+          
+        <div class = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter professors">  
+        <img src                                                                 = "http://www.statisticsattemplefox.info/wp-content/uploads/2020/01/zhaozhg-200x300-1-e1580232330869.jpg" class = "img-responsive center-block" width = "200" height           = "250"></a>
+      <div style = "text-align:center;">
+        <p   class = "facultyName"><a href="https://www.statisticsattemplefox.info/people/zhigen/" target="_blank" class="facultyNameLink" rel="noopener noreferrer">Zhigen Zhao  </a><br></p>
+        <p   class = "facultyDes"><strong>Associate Professor</strong><br>                          
+      </div>
+    </div>
+
+
+
+          <div class = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter staff">  
+        <img src                                                                 = "http://www.statisticsattemplefox.info/wp-content/uploads/2020/01/Louise-Jones-HS3910.jpg" class = "img-responsive center-block" width = "200" height           = "250"></a>
+      <div style = "text-align:center;">
+        <p   class = "facultyName"><a href="https://www.statisticsattemplefox.info/people/louise/" target="_blank" class="facultyNameLink" rel="noopener noreferrer">Louise Jones  </a><br></p>
+        <p   class = "facultyDes"><strong>Administrative Specialist</strong><br>                     
+      </div>
+    </div>
+
+    <div class = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter staff">  
+        <img src                                                                 = "http://www.statisticsattemplefox.info/wp-content/uploads/2020/01/summerpagehs23909.jpg" class = "img-responsive center-block" width = "200" height           = "250"></a>
+      <div style = "text-align:center;">
+        <p   class = "facultyName"><a href="https://www.statisticsattemplefox.info/people/summer/" target="_blank" class="facultyNameLink" rel="noopener noreferrer">Summer Page  </a><br></p>
+        <p   class = "facultyDes"><strong>Senior Administrative Assistant</strong><br>                       
+      </div>
+    </div>
+             
+    <div class = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter staff">  
+       <img src                                                                 = "https://www.statisticsattemplefox.info/wp-content/uploads/2020/02/samar-khan-248x300-2.jpg" class = "img-responsive center-block" width = "200" height           = "250"></a>
+      <div style = "text-align:center;">
+        <p   class = "facultyName"><a href="https://www.statisticsattemplefox.info/people/samar/" target="_blank" class="facultyNameLink" rel="noopener noreferrer">Samar Khan  </a><br></p>
+        <p   class = "facultyDes"><strong>Assistant Director, MS Business Analytics & Data Science Programs </strong>  <br>                        
+      </div>
+    </div>
+    <div class = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter postdocs">  
+      <img src                                                                 = "https://www.statisticsattemplefox.info/wp-content/uploads/2020/03/Kathryn-Turnbull.jpg" class = "img-responsive center-block" width = "200" height           = "250"></a>
+     <div style = "text-align:center;">
+       <p   class = "facultyName"><a href="https://www.statisticsattemplefox.info/people/kathryn/" target="_blank" class="facultyNameLink" rel="noopener noreferrer">Kathryn Turnbull</a><br></p>
+       <p   class = "facultyDes"><strong>Post-Doc, Statistical Science </strong>  <br>                        
+     </div>
+   </div>
+   <div class = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter postdocs">  
+    <img src                                                                 = "https://www.statisticsattemplefox.info/wp-content/uploads/2020/03/Amir.jpg" class = "img-responsive center-block" width = "200" height           = "250"></a>
+   <div style = "text-align:center;">
+     <p   class = "facultyName"><a href="https://www.statisticsattemplefox.info/people/amir/" target="_blank" class="facultyNameLink" rel="noopener noreferrer">Amir Ghasemian</a><br></p>
+     <p   class = "facultyDes"><strong>Post-Doc, Statistical Science</strong>  <br>                        
+   </div>
+ </div>
+ <div class = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter postdocs">  
+  <img src                                                                 = "https://www.statisticsattemplefox.info/wp-content/uploads/2020/03/Jeanne.jpg" class = "img-responsive center-block" width = "200" height           = "250"></a>
+ <div style = "text-align:center;">
+   <p   class = "facultyName"><a href="https://www.statisticsattemplefox.info/people/Regina/" target="_blank" class="facultyNameLink" rel="noopener noreferrer">Regina Ruane  </a><br></p>
+   <p   class = "facultyDes"><strong>Post-Doc, Statistical Science</strong>  <br>                        
+ </div>
+</div>
+<div class = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter postdocs">  
+  <img src                                                                 = "https://www.statisticsattemplefox.info/wp-content/uploads/2020/03/Samar.jpg" class = "img-responsive center-block" width = "200" height           = "250"></a>
+ <div style = "text-align:center;">
+   <p   class = "facultyName"><a href="https://www.statisticsattemplefox.info/people/samar/" target="_blank" class="facultyNameLink" rel="noopener noreferrer">Marios Papamichalis  </a><br></p>
+   <p   class = "facultyDes"><strong>Post-Doc, Statistical Science</strong>  <br>                        
+ </div>
+</div>
+
+ <ul>
+   <div class = "filter adjFaculty">   
+    <li> <p   class = "StudentName">Kim Bong     </p> </li>   
+  </div>  
+
+  <div class = "filter adjFaculty">   
+    <li> <p   class = "StudentName">Stephen Burgess      </p> </li>   
+  </div>  
+
+  <div class = "filter adjFaculty">   
+    <li> <p   class = "StudentName">Joseph Ciccimaro       </p> </li>   
+  </div>  
+
+  <div class = "filter adjFaculty">   
+    <li> <p   class = "StudentName">Green Jamile       </p> </li>   
+  </div>  
+
+  <div class = "filter adjFaculty">   
+    <li> <p   class = "StudentName"> Li He      </p> </li>   
+  </div>  
+
+  <div class = "filter adjFaculty">   
+    <li> <p   class = "StudentName">Chris  Hopson      </p> </li>   
+  </div>  
+
+  <div class = "filter adjFaculty">   
+    <li> <p   class = "StudentName">Dungyang Lee       </p> </li>   
+  </div>  
+
+  <div class = "filter adjFaculty">   
+    <li> <p   class = "StudentName"> Jaipal Rathi       </p> </li>   
+  </div>  
+
+  <div class = "filter adjFaculty">   
+    <li> <p   class = "StudentName"> Timothy Read    </p> </li>   
+  </div>  
+ 
+  <div class = "filter adjFaculty">   
+    <li> <p   class = "StudentName">Charles Shuman      </p> </li>   
+  </div>  
+
+  <div class = "filter adjFaculty">   
+    <li> <p   class = "StudentName">Joshua  Tapley      </p> </li>   
+  </div>  
+
+  <div class = "filter adjFaculty">   
+    <li> <p   class = "StudentName">Jing Xiao     </p> </li>   
+  </div>  
+ 
+  <div class = "filter adjFaculty">   
+    <li> <p   class = "StudentName">Linshan  Yuan      </p> </li>   
+  </div>  
+</ul>
+
+  <ul>
+    
+      <div class = "filter students">   
+        <li> <p   class = "StudentName">Gunes	Alkan    (Phd Student) </p> </li>   
+      </div>  
+    
+  
+  
+    <div class = "filter students">   
+      <li><p   class = "StudentName">Danielle	Cabel   (Phd Student)  </p> </li>   
+    </div>  
+  
+   
+  
+    <div class = "filter students">   
+      <li><p   class = "StudentName">Chen	Chen   (Phd Student)  </p> </li>  
+    </div>  
+  
+  
+  
+    <div class = "filter students">   
+      <li><p   class = "StudentName">Nooreen	Dabbish  (Phd Student)  </p>  </li>  
+      
+  </li>
+  
+  
+    <div class = "filter students">   
+      <li><p   class = "StudentName">Lucas	Glass   (Phd Student)  </p> </li>    
+    </div>  
+  
+  
+  
+    <div class = "filter students">   
+      <li><p   class = "StudentName">Chen	Chen  (Phd Student)  </p>  </li>  
+    </div>  
+  
+  
+  
+    <div class = "filter students">   
+      <li><p   class = "StudentName">Naimin	Jing  (Phd Student)  </p>    </li>
+    </div>  
+  
+  
+  
+    <div class = "filter students">   
+      <li><p   class = "StudentName">Amanda 	Kwok  (Phd Student)  </p>    </li>
+    </div>  
+  
+ 
+  
+    <div class = "filter students">   
+      <li><p   class = "StudentName">Zhengkang	Liang   (Phd Student)  </p>  </li>  
+    </div>  
+  
+ 
+  
+    <div class = "filter students">   
+      <li><p   class = "StudentName">Jason	Liu   (Phd Student)  </p>    </li>
+    </div>  
+  
+ 
+  
+    <div class = "filter students">   
+      <li><p   class = "StudentName">Fang	Lu   (Phd Student)  </p>    </li>
+    </div>  
+  
+ 
+  
+    <div class = "filter students">   
+      <li><p   class = "StudentName">Richard	Nair    (Phd Student)  </p> </li>   
+    </div>  
+  
+ 
+  
+    <div class = "filter students">   
+      <li><p   class = "StudentName">Michael	Power   (Phd Student)  </p>   </li> 
+    </div>  
+  
+ 
+  
+    <div class = "filter students">   
+      <li><p   class = "StudentName">Abdul-Nasah	Soale   (Phd Student)  </p>    </li>
+    </div>  
+  
+ 
+  
+    <div class = "filter students">   
+      <li><p   class = "StudentName">Jian	Sun   (Phd Student)  </p>    </li>
+    </div>  
+  
+ 
+  
+    <div class = "filter students">   
+      <li><p   class = "StudentName"> Nan	Sun  (Phd Student)  </p>    </li>
+    </div>  
+  
+
+  
+    <div class = "filter students">   
+      <li><p   class = "StudentName">Yu	Tian  (Phd Student)  </p>    </li>
+    </div>  
+  
+ 
+  
+    <div class = "filter students">   
+      <li><p   class = "StudentName">Siddarth 	Viswanathan     (Phd Student)  </p>    </li>
+    </div>  
+  
+ 
+  
+    <div class = "filter students">   
+      <li><p   class = "StudentName">Tong	Wang  (Phd Student)  </p>  </li>   
+    </div>  
+  
+  
+  
+    <div class = "filter students">   
+      <li><p   class = "StudentName">Yanhui	Xu   (Phd Student)  </p> </li>    
+    </div>  
+  
+ 
+  
+    <div class = "filter students">   
+      <li><p   class = "StudentName">Ziyan	Yin   (Phd Student)  </p>  </li>   
+    </div>  
+  
+  
+    <div class = "filter students">   
+      <li> <p   class = "StudentName">Minzhengxiong	Zhang   (Phd Student)  </p>  </li>   
+    </div>  
+  
+  
+    <div class = "filter students">   
+      <li><p   class = "StudentName">Shiyu	Zhang   (Phd Student)  </p> </li>    
+    </div>  
+  
+  
+    
+      <div class = " filter students"> 
+        <li><p class = "StudentName"> Xu	Zhang  (Phd Student) <br></li>                         
+    </div>
+  
+
+
+  
+    <div class = "filter students">   
+      <li><p   class = "StudentName">Jianyun	Zhu   (Phd Student)  </p>   </li> 
+    </div>  
+  
+</ul>
+    
+</div>
+
+
+</section>
+
+</body>
+    <script src  = "https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type = "text/javascript" src = "https://www.fox.temple.edu/cms/wp-content/themes/fox/assets/js/jquery.fancybox.min.js"></script>
+    <script src  = "https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src  = "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type = "text/javascript" src = "https://www.fox.temple.edu/centennial/wp-content/themes/foxcentennial/scripts/jquery.scrolltofixed.min.js?ver=1.1"></script>
+    <script src  = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+    <script src  = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src  = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script type = "text/javascript">
+			$(document).ready(function() {
+			
+			$(".fancybox").fancybox({
+                            touch: false
+			});
+			});
+			
+			$(".portraitHead").hover(over, out);
+			function over(){
+			TweenMax.to(this, 0.3, {backgroundColor:"#a41e35"}),
+			TweenMax.to(this,  0.3,{width:200})
+			};
+			function out(){
+			TweenMax.to(this, 0.3, {backgroundColor:"rgba(34,34,34,0.43)"}),
+			TweenMax.to(this,  0.3,{width:150})
+			};
+			
+			$("#learnsanat").hover(Hover, Hout);
+			$("#learnPaul").hover(Hover, Hout);
+			$("#learnEdo").hover(Hover, Hout);
+			function Hover(){
+			TweenMax.to(this, 0.3, {color:"#feb426"})
+			};
+			function Hout(){
+			TweenMax.to(this, 0.3, {color:"#a41e35"})
+			};
+			
+			document.getElementById("learnsanat").onclick = function () {
+                            window.open('https://cis.temple.edu/user/171','_blank');
+                        };
+                        
+                        document.getElementById("learnPaul").onclick = function () {
+                            window.open('https://www.fox.temple.edu/mcm_people/paulpavlou/','_blank');
+                        };
+                        
+                        document.getElementById("learnEdo").onclick = function () {
+                            window.open('https://www.fox.temple.edu/mcm_people/edoardo-airoldi/','_blank');
+                        };
+                        
+                        $(document).ready(function() {
+
+           $('.categories').scrollToFixed({
+                preFixed : function() { $('.categories').css('background-color', '#222222'); },
+                postFixed: function() { $('.categories').css('background-color', '#a41e35'); }
+    });
+        });
+        
+         $(function() {
+        $('.categories li').hover(
+            function(){ $(this).addClass('open') },
+            function(){ $(this).removeClass('open') }
+        );
+    });
+
+	</script>
+
+
+	
+<script>
+	
+$(document).ready(function(){
+
+$(".filter-button").click(function(){
+var value = $(this).attr('data-filter');
+
+if(value == "all")
+{
+
+$('.filter').show('1000');
+}
+else
+{
+
+$(".filter").not('.'+value).hide('3000');
+$('.filter').filter('.'+value).show('3000');
+
+}
+
+
+if ($(".filter-button").removeClass("active")) {
+$(this).removeClass("active");
+}
+$(this).addClass("active");
+
+});
+
+});
+
+function alertFunction() {
+            
+
+            var value = "postdocs";
+
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+           
+
+
+         }
+
+window.onload = alertFunction;
+</script>
+
+
+</html>
